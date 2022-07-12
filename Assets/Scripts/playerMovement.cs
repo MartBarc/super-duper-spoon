@@ -38,12 +38,12 @@ public class playerMovement : MonoBehaviour
         {
             if (cameraBool)
             {
-                FloorCamera.m_Priority = 9;
+                FloorCamera.m_Priority = 11;
                 cameraBool = false;
             }
             else
             {
-                FloorCamera.m_Priority = 11;
+                FloorCamera.m_Priority = 9;
                 cameraBool = true;
             }
 
