@@ -17,6 +17,7 @@ public class playerMovement : MonoBehaviour
 
     //hey  chris what up???/
     //type something idc
+    // What am I here for?
 
     // Update is called once per frame
     void Update()
@@ -30,6 +31,8 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("speed", movement.sqrMagnitude);
 
         mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Debug.Log("UPDATE!!!");
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
