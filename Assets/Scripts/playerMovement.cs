@@ -14,6 +14,9 @@ public class playerMovement : MonoBehaviour
 
     Vector2 movement;
     Vector2 mousepos;
+
+    //hey  chris what up???/
+    //type something idc
     // What am I here for?
 
     // Update is called once per frame
