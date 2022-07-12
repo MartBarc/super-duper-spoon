@@ -29,8 +29,6 @@ public class playerMovement : MonoBehaviour
 
         mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        Debug.Log("UPDATE!!!");
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (cameraBool)
