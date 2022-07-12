@@ -19,6 +19,8 @@ public class playerMovement : MonoBehaviour
     //type something idc
     // What am I here for?
 
+    // TO DIE!!!!!
+
     // Update is called once per frame
     void Update()
     {
