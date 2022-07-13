@@ -13,7 +13,6 @@ public class shooting : MonoBehaviour
 
     public float bulletForce = 20f;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -33,7 +32,6 @@ public class shooting : MonoBehaviour
         bullet.GetComponent<bullet>().player = this.gameObject;
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(Gun.up * bulletForce, ForceMode2D.Impulse);
-        
     }
 
     public void playExplosionSound()
@@ -73,7 +71,6 @@ public class shooting : MonoBehaviour
             StartCoroutine(wait5());
             return;
         }
-
     }
 
     IEnumerator wait1()
@@ -101,5 +98,4 @@ public class shooting : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         explosionSoundPlaying5 = false;
     }
-
 }

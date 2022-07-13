@@ -46,9 +46,7 @@ public class playerMovement : MonoBehaviour
                 FloorCamera.m_Priority = 9;
                 cameraBool = true;
             }
-
         }
-
     }
 
     void FixedUpdate()

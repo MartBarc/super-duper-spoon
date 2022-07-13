@@ -14,6 +14,7 @@ public class enemyMove : MonoBehaviour
     public float attackSpeed = 1f;
     public float attackDamage = 1f;
     public bool canAttack = true;
+    public AudioSource attackSound;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class enemyMove : MonoBehaviour
         {
             if (canAttack)
             {
+                attackSound.Play();
                 canAttack = false;
                 baseTransform.gameObject.GetComponent<baseManager>().TakeHit(attackDamage);
                 StartCoroutine(attackCooldown());
